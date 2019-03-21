@@ -2,14 +2,14 @@ version: '2'
 services:
   nuxeo:
     image: nuxeo:latest
-    container_name: aquifer-nuxeo
+    container_name: nuxeo
     environment:
       - NUXEO_PACKAGES=nuxeo-web-ui nuxeo-dam nuxeo-drive nuxeo-showcase-content nuxeo-template-rendering nuxeo-template-rendering-samples
     ports:
       - 8080:80
-    #logging:
-      #driver: awslogs
-      #options: 
-        #awslogs-group: aquifer-nuxeo
-        #awslogs-region: us-west-2
-        #awslogs-stream-prefix: nuxeo
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: nuxeo
+        awslogs-region: us-west-2
+        awslogs-stream-prefix: nuxeo

@@ -1,6 +1,6 @@
 FROM nuxeo:latest
 
-LABEL maintainer="chris.hoffman@aquifer.org"
+LABEL maintainer="chris.c.hoffman@gmail.org"
 
 ENV NUXEO_PACKAGES="nuxeo-web-ui nuxeo-dam nuxeo-drive nuxeo-showcase-content nuxeo-template-rendering nuxeo-template-rendering-samples"
 EXPOSE 8080
